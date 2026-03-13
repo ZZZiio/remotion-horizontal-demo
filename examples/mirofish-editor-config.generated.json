@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "projectName": "MiroFish",
+    "accountName": "Oxecho",
+    "positioning": "AI开源项目翻译官 / 避坑拆解号",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "visualSkin": "blacktech",
+    "subtitleMode": "single"
+  },
+  "theme": {
+    "accentColor": "#42E8D4",
+    "secondaryColor": "#6CAEFF",
+    "pageLight": "#F4F8FB",
+    "pageDark": "#09131C"
+  },
+  "tags": {
+    "left": "GitHub 热门项目",
+    "right": "帮普通人看懂项目"
+  },
+  "segments": [
+    {
+      "id": "hook",
+      "label": "Hook",
+      "navLabel": "开场",
+      "durationInFrames": 90,
+      "layout": "hero",
+      "motionPreset": "lift",
+      "visualPreset": "orb",
+      "title": "AI开始预演未来？",
+      "subtitle": "MiroFish 更像预测沙盘，不是普通聊天 AI",
+      "bottomConclusion": "值得关注，但别吹成万能预测器",
+      "voiceoverText": "如果一个开源项目，想先把未来在数字沙盘里演一遍，它到底是在画饼，还是在打开下一代预测工具？",
+      "humanConclusion": "先让观众意识到这不是普通 AI 工具。",
+      "subtitleSecondaryText": "This is a prediction sandbox, not a chat bot.",
+      "points": [
+        "不是聊天 AI",
+        "而是预测沙盘"
+      ],
+      "mediaLabel": "数字沙盘主视觉",
+      "mediaPrompt": "futuristic digital sandbox, simulation globe, multi-agent world, blue black tech style, cold white text area, 6:5 horizontal",
+      "evidenceText": "项目定位来自官方 README",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p1",
+      "label": "引言P1",
+      "navLabel": "引言",
+      "durationInFrames": 1410,
+      "layout": "hero",
+      "motionPreset": "lift",
+      "visualPreset": "orb",
+      "title": "它到底是什么？",
+      "subtitle": "官方叫群体智能预测引擎，人话就是先把现实问题丢进数字世界里演一遍",
+      "bottomConclusion": "先解释，再拉兴趣",
+      "voiceoverText": "MiroFish 官方把自己定义成群体智能预测引擎。翻译成人话，就是你把现实问题丢进去，它先搭一个数字世界，再让里面的角色和关系开始演化。",
+      "humanConclusion": "它想做的，是先把现实问题放进 AI 沙盘里推演一次。",
+      "subtitleSecondaryText": "Translate it into plain language first.",
+      "points": [
+        "官方说法",
+        "人话翻译",
+        "一句话理解"
+      ],
+      "mediaLabel": "项目主视觉 + README 截图",
+      "mediaPrompt": "project hero image, digital sandbox world, clean blue tech editorial layout, 6:5 horizontal",
+      "evidenceText": "GitHub README 项目简介",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p2",
+      "label": "P2",
+      "navLabel": "能力",
+      "durationInFrames": 1650,
+      "layout": "concept",
+      "motionPreset": "spotlight",
+      "visualPreset": "nodes",
+      "title": "它不是先回答，而是先模拟",
+      "subtitle": "核心区别不是会不会答，而是它先搭环境、搭关系、搭记忆，再开始推演",
+      "bottomConclusion": "先搭世界，再做判断",
+      "voiceoverText": "它和普通问答工具最大的区别，是它不会一上来就给你一个答案，而是先搭图谱、搭环境、搭关系、搭记忆，然后再开始模拟。",
+      "humanConclusion": "它的路子更像数字沙盘，不像聊天机器人。",
+      "subtitleSecondaryText": "Build world, relations and memory before simulation.",
+      "points": [
+        "搭图谱",
+        "搭环境",
+        "跑推演"
+      ],
+      "mediaLabel": "节点关系图 / 工作流结构",
+      "mediaPrompt": "multi-agent graph, relationship nodes, futuristic dashboard, blue black interface, 6:5 horizontal",
+      "evidenceText": "工作流与结构图来自官方 README",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p3",
+      "label": "P3",
+      "navLabel": "场景",
+      "durationInFrames": 1950,
+      "layout": "dashboard",
+      "motionPreset": "stagger",
+      "visualPreset": "dashboard",
+      "title": "它能干嘛，案例才是重点",
+      "subtitle": "官方公开信息里，既有舆情推演，也有《红楼梦》结局推演",
+      "bottomConclusion": "案例负责留人",
+      "voiceoverText": "这个项目最容易讲清楚的，不是抽象原理，而是案例。官方已经展示了舆情推演，也展示了《红楼梦》失传结局这种叙事世界推演。",
+      "humanConclusion": "它既想做现实预测，也想做故事推演。",
+      "subtitleSecondaryText": "Use cases matter more than abstract claims.",
+      "points": [
+        "舆情推演",
+        "策略沙盘",
+        "叙事世界模拟"
+      ],
+      "mediaLabel": "多卡片案例板",
+      "mediaPrompt": "case study dashboard, public opinion simulation, story world prediction cards, blue interface, 6:5 horizontal",
+      "evidenceText": "官方 Demo 与 README 示例",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p4",
+      "label": "P4",
+      "navLabel": "门槛",
+      "durationInFrames": 1860,
+      "layout": "phone",
+      "motionPreset": "stagger",
+      "visualPreset": "phone",
+      "title": "门槛要讲透，不然信任立不住",
+      "subtitle": "这类项目很容易被吹过头，但真正有价值的是把门槛讲明白",
+      "bottomConclusion": "门槛是信任来源",
+      "voiceoverText": "它需要 Node、Python、API Key 甚至额外服务支持，而且官方也提醒模拟成本不低。所以这类项目一定要讲清楚，不是每个人今天都能无脑上手。",
+      "humanConclusion": "很酷，但不是零门槛神器。",
+      "subtitleSecondaryText": "Cool, but not a zero-threshold tool.",
+      "points": [
+        "依赖要求",
+        "适合谁",
+        "别吹太满"
+      ],
+      "mediaLabel": "信息清单 + 问答卡片",
+      "mediaPrompt": "requirements panel, info cards, warning notes, dark clean tech ui, 6:5 horizontal",
+      "evidenceText": "环境依赖与限制来自官方文档",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p5",
+      "label": "P5",
+      "navLabel": "判断",
+      "durationInFrames": 1620,
+      "layout": "dashboard",
+      "motionPreset": "calm",
+      "visualPreset": "dashboard",
+      "title": "值不值得关注，必须给判断",
+      "subtitle": "不要只讲功能，要明确告诉观众值不值得看、适不适合现在上手",
+      "bottomConclusion": "明确判断，减少犹豫",
+      "voiceoverText": "我的结论很简单：这个项目值得关注，值得收藏，值得持续跟踪，但不值得被吹成万能预测器。",
+      "humanConclusion": "值得关注，但别神化。",
+      "subtitleSecondaryText": "Worth watching, not worth mythologizing.",
+      "points": [
+        "值得看",
+        "适合长期关注",
+        "不适合吹成神器"
+      ],
+      "mediaLabel": "判断卡片",
+      "mediaPrompt": "verdict card, editorial tech style, clean conclusion panel, blue black, 6:5 horizontal",
+      "evidenceText": "结论来自官方资料与谨慎判断",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "p6",
+      "label": "结语P6",
+      "navLabel": "结语",
+      "durationInFrames": 1260,
+      "layout": "summary",
+      "motionPreset": "lift",
+      "visualPreset": "image",
+      "title": "这项目最值得看的，是方向",
+      "subtitle": "它更像一个值得长期观察的前沿路线，而不是马上人人可用的工具",
+      "bottomConclusion": "值得关注，别吹万能",
+      "voiceoverText": "如果你关心的是 AI 会不会从回答问题，走向模拟复杂世界，那 MiroFish 很值得继续追。",
+      "humanConclusion": "看方向价值，不看神话包装。",
+      "subtitleSecondaryText": "Watch the direction, not the hype.",
+      "points": [
+        "值得继续追",
+        "更像方向验证",
+        "不是立刻上手型工具"
+      ],
+      "mediaLabel": "收束总结卡",
+      "mediaPrompt": "summary card, clean futuristic editorial style, simulation lab mood, 6:5 horizontal",
+      "evidenceText": "最终判断与账号定位收束",
+      "needsGithubEvidence": false
+    }
+  ]
+}

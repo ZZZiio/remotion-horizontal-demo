@@ -1,0 +1,53 @@
+{
+  "name": "remotion-horizontal-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts HorizontalTechDemo out/horizontal-tech-demo.mp4",
+    "still": "remotion still src/index.ts HorizontalTechDemo out/horizontal-tech-demo.png --frame=45",
+    "studio:account": "remotion studio src/index.ts",
+    "render:account": "remotion render src/index.ts AccountDeepTemplate out/account-deep-template.mp4",
+    "render:account:json": "node scripts/render-account-from-json.mjs",
+    "render:account:segments": "node scripts/render-account-segments.mjs",
+    "still:account": "remotion still src/index.ts AccountDeepTemplate out/account-deep-template.png --frame=90",
+    "editor": "vite --config editor/vite.config.ts",
+    "editor:build": "vite build --config editor/vite.config.ts",
+    "check": "tsc --noEmit",
+    "test:import": "npx esbuild scripts/test-import-mirofish.mts --bundle --platform=node --format=esm --outfile=.tmp/test-import-mirofish.mjs && node .tmp/test-import-mirofish.mjs",
+    "test:config": "npx esbuild scripts/test-config-normalization.mts --bundle --platform=node --format=esm --outfile=.tmp/test-config-normalization.mjs && node .tmp/test-config-normalization.mjs",
+    "test:stick": "npx esbuild scripts/test-stick-scene-normalization.mts --bundle --platform=node --format=esm --outfile=.tmp/test-stick-scene-normalization.mjs && node .tmp/test-stick-scene-normalization.mjs",
+    "test:voiceover-match": "npx esbuild scripts/test-voiceover-batch-match.mts --bundle --platform=node --format=esm --outfile=.tmp/test-voiceover-batch-match.mjs && node .tmp/test-voiceover-batch-match.mjs",
+    "bootstrap:dev": "powershell.exe -ExecutionPolicy Bypass -File scripts/bootstrap-dev.ps1",
+    "bootstrap:dev:quick": "powershell.exe -ExecutionPolicy Bypass -File scripts/bootstrap-dev.ps1 -Quick",
+    "install:tool": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/install-project-tool.ps1 -NoPause",
+    "check:first-run": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/first-run-check.ps1 -NoPause",
+    "test:render": "npx esbuild scripts/test-render-normalization.mts --bundle --platform=node --format=esm --outfile=.tmp/test-render-normalization.mjs && node .tmp/test-render-normalization.mjs",
+    "test:align": "npx esbuild scripts/test-align-diagnostics.mts --bundle --platform=node --format=esm --outfile=.tmp/test-align-diagnostics.mjs && node .tmp/test-align-diagnostics.mjs",
+    "test:render-diagnostics": "npx esbuild scripts/test-render-diagnostics.mts --bundle --platform=node --format=esm --outfile=.tmp/test-render-diagnostics.mjs && node .tmp/test-render-diagnostics.mjs",
+    "prompt:account": "node scripts/build-project-analysis-prompt.mjs",
+    "prompt:clipboard": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/build-project-analysis-prompt.ps1 -NoPause",
+    "json:account": "node scripts/build-project-json.mjs",
+    "json:clipboard": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/build-project-json.ps1 -NoPause",
+    "setup:openai": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/setup-openai-key.ps1 -NoPause",
+    "video:account": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/build-project-video.ps1 -NoPause",
+    "video:clipboard": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/build-project-video.ps1 -NoPause -OpenFolder",
+    "panel": "powershell.exe -NoLogo -ExecutionPolicy Bypass -File scripts/project-studio-panel.ps1"
+  },
+  "dependencies": {
+    "@remotion/player": "4.0.344",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.344"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.344",
+    "@vitejs/plugin-react": "^5.0.2",
+    "@types/node": "^24.3.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.8.3",
+    "vite": "^7.1.5"
+  }
+}

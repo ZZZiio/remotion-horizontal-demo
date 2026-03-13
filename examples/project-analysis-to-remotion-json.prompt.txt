@@ -1,0 +1,433 @@
+【项目分析 -> Remotion JSON 专用提示词模板】
+
+你现在不是在写文章，也不是在写 PPT，而是要为一个 Remotion 视频项目输出“可直接落地渲染”的严格 JSON。
+
+请严格按下面流程执行，并且最终只输出合法 JSON，不要输出解释、不要输出 Markdown 代码块、不要输出多余前后缀。
+
+====================
+一、你的任务目标
+====================
+你需要基于“官方公开资料 + 账号定位 + 短视频逻辑”，产出一份可直接用于 Remotion 项目的视频配置 JSON。
+
+输出目标不是泛泛内容策划，而是：
+1. 帮普通观众快速看懂一个 AI 开源项目
+2. 保留明确判断，不神化，不空泛
+3. 文案适合中文短视频口播
+4. 结构适合 16:9 横版科技感账号模板
+5. 最终输出必须是合法 JSON，可被程序读取
+
+====================
+二、信息来源规则
+====================
+1. 优先读取并依据以下信息源：
+- GitHub README
+- 官方网站 / 官方文档
+- 官方 Demo / 官方介绍页
+- 仓库内公开的文档、截图、示例
+
+2. 禁止凭空编造功能、效果、用户规模、商业数据。
+
+3. 如果某些信息无法从官方公开资料确认：
+- 可以做“谨慎推断”
+- 但推断必须保守，不能夸张
+- 最终文案不要写成绝对事实
+
+4. 输出内容时遵守这个原则：
+- 能确认的，说清楚
+- 不能确认的，不硬编
+- 不要为了“好看”牺牲可信度
+
+====================
+三、账号定位（粘贴区）
+====================
+下面这段内容会由我替换为账号总提示词全文。你必须先理解它，再输出 JSON。
+
+[ACCOUNT_PROMPT_FULLTEXT_START]
+这里会由脚本自动替换为“账号总提示词全文”。如果你是手动使用，请把你的账号总提示词粘贴到这里。
+[ACCOUNT_PROMPT_FULLTEXT_END]
+
+====================
+四、项目输入（我会替换）
+====================
+[PROJECT_NAME]
+这里填写项目名
+
+[PROJECT_LINK]
+这里填写 GitHub 链接 / 官网链接 / 官方文档链接
+
+[TARGET_DURATION_SEC]
+目标总时长（秒）。你需要让 6 段 duration_sec 的总和接近这个数值（允许上下浮动 10%）。
+如果目标是 5 分钟左右，那么这里通常是 300。
+
+[OPTIONAL_ACCOUNT_DATA_SNAPSHOT]
+这里可粘贴账号历史数据、爆款偏好、受众反馈；如果为空请忽略
+
+[OPTIONAL_EXTRA_REQUIREMENTS]
+这里填写本次额外要求，例如：
+- 偏粉丝向，不要太像讲课
+- 更强调“值不值得关注”
+- 少讲部署，多讲感受
+- 主视觉偏冷淡黑科技
+
+====================
+五、内容策略要求
+====================
+你要输出的是“适合我这个账号”的项目解读视频 JSON，而不是单纯项目总结。
+
+必须满足：
+1. 面向普通科技用户，而不是深度开发者
+2. 让观众快速知道：
+   - 它是什么
+   - 它能干嘛
+   - 为什么值得看
+   - 门槛在哪里
+   - 哪些地方不要吹太满
+3. 文案要有钩子、有判断、有可信度
+4. 不能写成学术论文，也不能写成空洞鸡汤
+5. 不要满屏术语，不要过度技术炫耀
+6. 画面内容要“适合粉丝观看”，避免后台味、控制台味、讲师味、分析面板味太重
+7. 更像成片内容，不像项目答辩
+
+====================
+六、输出结构要求
+====================
+你必须输出严格 JSON，字段结构如下：
+
+{
+  "meta": {
+    "projectName": "",
+    "accountName": "",
+    "positioning": "",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "visualSkin": "blacktech"
+  },
+  "theme": {
+    "accentColor": "#42E8D4",
+    "secondaryColor": "#6CAEFF",
+    "pageLight": "#F4F8FB",
+    "pageDark": "#09131C"
+  },
+  "tags": {
+    "left": "",
+    "right": ""
+  },
+  "segments": []
+}
+
+其中：
+- meta / theme / tags / segments 都必须存在
+- segments 必须是数组
+- 不允许输出 null
+- 不允许输出注释
+- 不允许输出 markdown 代码块
+- 不允许输出任何 JSON 之外的说明
+
+====================
+七、segments 规则
+====================
+segments 固定输出 6 段，顺序如下：
+1. 开场 hook
+2. 它是什么
+3. 它能干嘛
+4. 门槛 / 限制
+5. 值不值得关注
+6. 结语 / 收束
+
+总时长要求：6 段 duration_sec 的总和要接近 [TARGET_DURATION_SEC] 秒（允许上下浮动 10%）。
+建议分配（可微调）：hook 20-30 秒；p1 50-70 秒；p2 60-80 秒；p3 50-70 秒；p4 50-70 秒；p5 40-60 秒。
+
+每个 segment 必须包含这些字段：
+- id
+- label
+- navLabel
+- duration_sec
+- layout
+- motionPreset
+- visualPreset
+- title
+- subtitle
+- bottomConclusion
+- voiceoverText
+- humanConclusion
+- points
+- mediaLabel
+- mediaPrompt
+- evidenceText
+- needsGithubEvidence
+
+字段要求：
+1. id 使用：
+- hook
+- p1
+- p2
+- p3
+- p4
+- p5
+
+2. label / navLabel 必须是中文短标签，适合视频章节
+
+3. duration_sec：
+- hook 建议 3~5 秒
+- 其余段建议 6~12 秒
+- 全片不要拖沓
+
+4. layout 可选：
+- hero
+- dashboard
+- phone
+- summary
+
+5. motionPreset 可选：
+- lift
+- calm
+- stagger
+- spotlight
+
+6. visualPreset 可选：
+- orb
+- dashboard
+- phone
+- image
+- nodes
+- stick-dialogue
+- stick-conflict
+- stick-compare
+- stick-narration
+
+7. title：
+- 每段一个强概括标题
+- 适合画面大字展示
+- 不要太长，建议 8~18 个中文字符
+
+8. subtitle：
+- 是对标题的补充
+- 要自然、好读、像给人解释
+- 不要像论文摘要
+
+9. bottomConclusion：
+- 一句明确判断
+- 能独立成立
+- 适合底部长条结论区
+
+10. voiceoverText：
+- 必须是自然中文口播
+- 一口气能讲出来
+- 不要列表腔，不要太书面
+- 每段都要像短视频真人解说
+
+11. humanConclusion：
+- 把项目官方说法翻译成人话
+- 更贴近普通观众理解
+
+12. points：
+- 每段 2~4 条
+- 必须短、准、能上屏
+- 不能写成长段落
+
+13. mediaLabel：
+- 右侧主视觉说明
+- 要像“项目主视觉 / 交互界面 / 效果示意 / 结论卡片”这种可视化表达
+
+14. mediaPrompt：
+- 给图像 / 主视觉生成或素材搜集用的提示词
+- 需要体现：黑科技、科技感、冷色、横版、适合中文科技账号
+- 避免出现 UI 面板过多、控制台过多、密集代码墙
+
+15. evidenceText：
+- 一句话说明该段依据来自哪里
+- 如果是基于 README / 官网 / 文档 / Demo，就直接写出来
+- 如果含有推断，要保守表达
+
+16. needsGithubEvidence：
+- 如果这一段明显依赖官方公开资料，填 true
+- 如果更多是总结判断，也可填 false
+
+====================
+八、风格约束
+====================
+最终 JSON 的整体风格必须满足：
+- 像“帮普通人看懂项目”
+- 像“值不值得关注”的判断型内容
+- 像“成片文案”，不是“答辩材料”
+- 粉丝看着舒服，不要信息噪音过多
+- 标题有抓力，但不能标题党过头
+- 结论明确，但不能神化项目
+
+尤其避免：
+- 夸大改变世界
+- 夸大落地成熟度
+- 把实验型项目吹成现成工具
+- 满屏技术术语堆砌
+- 充满“官方依据 / 参考信息 / 当前章节 / EN KEY / 跟住这句”这类后台味标识
+
+====================
+九、推荐默认参数
+====================
+如果没有额外说明，请默认：
+- meta.accountName = "AI开源拆解"
+- meta.positioning = "AI开源项目翻译官 / 避坑拆解"
+- meta.width = 1920
+- meta.height = 1080
+- meta.fps = 30
+- meta.visualSkin = "blacktech"
+- tags.left = "AI开源拆解"
+- tags.right = "帮普通人看懂项目"
+- theme 使用默认冷色方案
+
+====================
+十、请严格按照下面模板输出
+====================
+请只输出合法 JSON，结构如下，字段必须补全：
+
+{
+  "meta": {
+    "projectName": "项目名",
+    "accountName": "AI开源拆解",
+    "positioning": "AI开源项目翻译官 / 避坑拆解",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "visualSkin": "blacktech",
+    "publishTitle": "用于发布的标题（抖音/B站/小红书）",
+    "publishDescription": "用于发布的简介（1~3 行，别太长）",
+    "publishTopics": "#AI开源 #开源项目 #项目名"
+  },
+  "theme": {
+    "accentColor": "#42E8D4",
+    "secondaryColor": "#6CAEFF",
+    "pageLight": "#F4F8FB",
+    "pageDark": "#09131C"
+  },
+  "tags": {
+    "left": "AI开源拆解",
+    "right": "帮普通人看懂项目"
+  },
+  "segments": [
+    {
+      "id": "hook",
+      "label": "开场",
+      "navLabel": "开场",
+      "duration_sec": 4,
+      "layout": "hero",
+      "motionPreset": "lift",
+      "visualPreset": "orb",
+      "title": "这里填开场标题",
+      "subtitle": "这里填开场副标题",
+      "bottomConclusion": "这里填一句结论",
+      "voiceoverText": "这里填自然口播",
+      "humanConclusion": "这里填人话总结",
+      "points": ["点1", "点2", "点3"],
+      "mediaLabel": "项目主视觉",
+      "mediaPrompt": "futuristic editorial hero, dark tech, cyan blue glow, clean cinematic composition, 16:9 horizontal",
+      "evidenceText": "依据来自官方 README / 官网介绍",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p1",
+      "label": "它是什么",
+      "navLabel": "定义",
+      "duration_sec": 8,
+      "layout": "hero",
+      "motionPreset": "lift",
+      "visualPreset": "orb",
+      "title": "这里填标题",
+      "subtitle": "这里填副标题",
+      "bottomConclusion": "这里填一句结论",
+      "voiceoverText": "这里填自然口播",
+      "humanConclusion": "这里填人话总结",
+      "points": ["点1", "点2", "点3"],
+      "mediaLabel": "项目概念主视觉",
+      "mediaPrompt": "concept visual, futuristic dark editorial, cinematic glow, minimal clutter, 16:9 horizontal",
+      "evidenceText": "依据来自官方 README / 官方文档",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p2",
+      "label": "它能干嘛",
+      "navLabel": "能力",
+      "duration_sec": 8,
+      "layout": "dashboard",
+      "motionPreset": "calm",
+      "visualPreset": "dashboard",
+      "title": "这里填标题",
+      "subtitle": "这里填副标题",
+      "bottomConclusion": "这里填一句结论",
+      "voiceoverText": "这里填自然口播",
+      "humanConclusion": "这里填人话总结",
+      "points": ["点1", "点2", "点3"],
+      "mediaLabel": "核心能力演示",
+      "mediaPrompt": "product capability scene, clean tech interface, editorial style, dark blue, simplified UI, 16:9 horizontal",
+      "evidenceText": "依据来自官方 demo / README 功能说明",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p3",
+      "label": "门槛限制",
+      "navLabel": "门槛",
+      "duration_sec": 8,
+      "layout": "phone",
+      "motionPreset": "stagger",
+      "visualPreset": "phone",
+      "title": "这里填标题",
+      "subtitle": "这里填副标题",
+      "bottomConclusion": "这里填一句结论",
+      "voiceoverText": "这里填自然口播",
+      "humanConclusion": "这里填人话总结",
+      "points": ["点1", "点2", "点3"],
+      "mediaLabel": "使用门槛提示",
+      "mediaPrompt": "barrier and requirements visual, minimal device scene, futuristic dark tech, clean composition, 16:9 horizontal",
+      "evidenceText": "依据来自官方文档与使用要求",
+      "needsGithubEvidence": true
+    },
+    {
+      "id": "p4",
+      "label": "值不值得看",
+      "navLabel": "判断",
+      "duration_sec": 8,
+      "layout": "dashboard",
+      "motionPreset": "calm",
+      "visualPreset": "image",
+      "title": "这里填标题",
+      "subtitle": "这里填副标题",
+      "bottomConclusion": "这里填一句结论",
+      "voiceoverText": "这里填自然口播",
+      "humanConclusion": "这里填人话总结",
+      "points": ["点1", "点2", "点3"],
+      "mediaLabel": "结论判断画面",
+      "mediaPrompt": "editorial verdict visual, premium dark tech style, simple focal composition, 16:9 horizontal",
+      "evidenceText": "依据来自官方资料与谨慎判断",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "p5",
+      "label": "结语",
+      "navLabel": "结语",
+      "duration_sec": 7,
+      "layout": "summary",
+      "motionPreset": "lift",
+      "visualPreset": "image",
+      "title": "这里填标题",
+      "subtitle": "这里填副标题",
+      "bottomConclusion": "这里填一句结论",
+      "voiceoverText": "这里填自然口播",
+      "humanConclusion": "这里填人话总结",
+      "points": ["点1", "点2", "点3"],
+      "mediaLabel": "收束总结画面",
+      "mediaPrompt": "closing scene, futuristic editorial summary, dark cinematic tech style, 16:9 horizontal",
+      "evidenceText": "最终收束判断",
+      "needsGithubEvidence": false
+    }
+  ]
+}
+
+====================
+十一、最终执行提醒
+====================
+最终回答时：
+- 只输出 JSON
+- 不要解释
+- 不要说“下面是结果”
+- 不要使用 ```json
+- 必须确保 JSON 能被直接解析

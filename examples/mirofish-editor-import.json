@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "project_name": "MiroFish",
+    "account_positioning": "AI\u5f00\u6e90\u9879\u76ee\u7ffb\u8bd1\u5b98 / \u907f\u5751\u62c6\u89e3\u53f7",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "subtitle_mode": "single"
+  },
+  "theme": {
+    "accent_color": "#42E8D4",
+    "secondary_color": "#6CAEFF",
+    "visual_style": "\u9ed1\u79d1\u6280\u63ed\u79d8 + \u5f00\u6e90\u79d1\u666e",
+    "title_style": "\u95ee\u9898\u578b + \u770b\u61c2\u578b"
+  },
+  "cover": {
+    "main_title": "AI\u5f00\u59cb\u9884\u6f14\u672a\u6765\uff1f",
+    "sub_title": "MiroFish \u66f4\u50cf\u9884\u6d4b\u6c99\u76d8\uff0c\u4e0d\u662f\u666e\u901a\u804a\u5929 AI",
+    "left_tag": "GitHub \u5f00\u6e90\u9879\u76ee",
+    "right_tag": "\u5e2e\u666e\u901a\u4eba\u770b\u61c2\u9879\u76ee",
+    "bottom_conclusion": "\u503c\u5f97\u5173\u6ce8\uff0c\u4f46\u522b\u5439\u6210\u4e07\u80fd\u9884\u6d4b\u5668"
+  },
+  "navigation": {
+    "items": [
+      "\u5f00\u573a",
+      "\u5f15\u8a00",
+      "\u80fd\u529b",
+      "\u573a\u666f",
+      "\u95e8\u69db",
+      "\u5224\u65ad",
+      "\u7ed3\u8bed"
+    ]
+  },
+  "segments": [
+    {
+      "id": "hook",
+      "name": "Hook",
+      "duration_sec": 3,
+      "layout": "hero",
+      "motion_preset": "lift",
+      "visual_preset": "orb",
+      "title": "AI\u5f00\u59cb\u9884\u6f14\u672a\u6765\uff1f",
+      "subtitle": "\u5b83\u4e0d\u662f\u666e\u901a\u804a\u5929 AI\uff0c\u5b83\u60f3\u5148\u628a\u672a\u6765\u653e\u8fdb\u6570\u5b57\u6c99\u76d8\u91cc\u6f14\u4e00\u904d\u3002",
+      "bottom_conclusion": "\u5148\u6293\u5174\u8da3\uff0c\u518d\u7ed9\u5224\u65ad",
+      "voiceover_text": "\u5982\u679c\u4e00\u4e2a\u5f00\u6e90\u9879\u76ee\uff0c\u60f3\u5148\u628a\u672a\u6765\u5728\u6570\u5b57\u6c99\u76d8\u91cc\u6f14\u4e00\u904d\uff0c\u5b83\u5230\u5e95\u662f\u5728\u753b\u997c\uff0c\u8fd8\u662f\u5728\u6253\u5f00\u4e0b\u4e00\u4ee3\u9884\u6d4b\u5de5\u5177\uff1f",
+      "human_conclusion": "\u5148\u8ba9\u89c2\u4f17\u610f\u8bc6\u5230\uff0c\u8fd9\u4e0d\u662f\u666e\u901a AI \u5de5\u5177\u3002",
+      "points": [
+        "\u4e0d\u662f\u804a\u5929 AI",
+        "\u66f4\u50cf\u9884\u6d4b\u6c99\u76d8"
+      ],
+      "media_label": "\u6570\u5b57\u6c99\u76d8\u4e3b\u89c6\u89c9",
+      "media_type": "generated_image",
+      "media_prompt": "futuristic digital sandbox, simulation globe, multi-agent world, blue black tech style, cold white text area, 6:5 horizontal",
+      "needs_github_evidence": true,
+      "evidence_text": "\u9879\u76ee\u5b9a\u4f4d\u6765\u81ea\u5b98\u65b9 README",
+      "subtitle_secondary_text": "This is a prediction sandbox, not a chat bot."
+    },
+    {
+      "id": "p1",
+      "name": "\u5f15\u8a00P1",
+      "duration_sec": 47,
+      "layout": "hero",
+      "motion_preset": "lift",
+      "visual_preset": "orb",
+      "title": "\u5b83\u5230\u5e95\u662f\u4ec0\u4e48\uff1f",
+      "subtitle": "\u5b98\u65b9\u53eb\u7fa4\u4f53\u667a\u80fd\u9884\u6d4b\u5f15\u64ce\uff0c\u4eba\u8bdd\u5c31\u662f\u5148\u628a\u73b0\u5b9e\u95ee\u9898\u4e22\u8fdb\u6570\u5b57\u4e16\u754c\u91cc\u6f14\u4e00\u904d\u3002",
+      "bottom_conclusion": "\u5148\u89e3\u91ca\uff0c\u518d\u62c9\u5174\u8da3",
+      "voiceover_text": "MiroFish \u5b98\u65b9\u628a\u81ea\u5df1\u5b9a\u4e49\u6210\u7fa4\u4f53\u667a\u80fd\u9884\u6d4b\u5f15\u64ce\u3002\u7ffb\u8bd1\u6210\u4eba\u8bdd\uff0c\u5c31\u662f\u4f60\u628a\u73b0\u5b9e\u95ee\u9898\u4e22\u8fdb\u53bb\uff0c\u5b83\u5148\u642d\u4e00\u4e2a\u6570\u5b57\u4e16\u754c\uff0c\u518d\u8ba9\u91cc\u9762\u7684\u89d2\u8272\u548c\u5173\u7cfb\u5f00\u59cb\u6f14\u5316\u3002",
+      "human_conclusion": "\u5b83\u60f3\u505a\u7684\uff0c\u662f\u5148\u628a\u73b0\u5b9e\u95ee\u9898\u653e\u8fdb AI \u6c99\u76d8\u91cc\u63a8\u6f14\u4e00\u6b21\u3002",
+      "points": [
+        "\u5b98\u65b9\u8bf4\u6cd5",
+        "\u4eba\u8bdd\u7ffb\u8bd1",
+        "\u4e00\u53e5\u7406\u89e3"
+      ],
+      "media_label": "\u9879\u76ee\u4e3b\u89c6\u89c9 + README \u622a\u56fe",
+      "media_type": "mixed",
+      "media_items": [
+        {
+          "id": "p1-media-1",
+          "label": "\u9879\u76ee\u4e3b\u89c6\u89c9",
+          "media_prompt": "project hero image, digital sandbox world, clean blue tech editorial layout, 6:5 horizontal",
+          "source": "generated"
+        },
+        {
+          "id": "p1-media-2",
+          "label": "README \u7ed3\u6784\u622a\u56fe\u98ce\u683c",
+          "media_prompt": "github readme overview, architecture blocks, open source project screenshot style, blue black layout, 6:5 horizontal",
+          "source": "generated"
+        }
+      ],
+      "media_prompt": "project hero image, digital sandbox world, clean blue tech editorial layout, 6:5 horizontal",
+      "needs_github_evidence": true,
+      "evidence_text": "GitHub README \u9879\u76ee\u7b80\u4ecb",
+      "subtitle_secondary_text": "Translate it into plain language first."
+    },
+    {
+      "id": "p2",
+      "name": "P2",
+      "duration_sec": 55,
+      "layout": "concept",
+      "motion_preset": "spotlight",
+      "visual_preset": "nodes",
+      "title": "\u5b83\u4e0d\u662f\u5148\u56de\u7b54\uff0c\u800c\u662f\u5148\u6a21\u62df",
+      "subtitle": "\u6838\u5fc3\u533a\u522b\u4e0d\u662f\u4f1a\u4e0d\u4f1a\u7b54\uff0c\u800c\u662f\u5b83\u5148\u642d\u73af\u5883\u3001\u642d\u5173\u7cfb\u3001\u642d\u8bb0\u5fc6\uff0c\u518d\u5f00\u59cb\u63a8\u6f14\u3002",
+      "bottom_conclusion": "\u5148\u642d\u4e16\u754c\uff0c\u518d\u505a\u5224\u65ad",
+      "voiceover_text": "\u5b83\u548c\u666e\u901a\u95ee\u7b54\u5de5\u5177\u6700\u5927\u7684\u533a\u522b\uff0c\u662f\u5b83\u4e0d\u4f1a\u4e00\u4e0a\u6765\u5c31\u7ed9\u4f60\u7b54\u6848\uff0c\u800c\u662f\u5148\u642d\u56fe\u8c31\u3001\u642d\u73af\u5883\u3001\u642d\u5173\u7cfb\u3001\u642d\u8bb0\u5fc6\uff0c\u7136\u540e\u518d\u5f00\u59cb\u6a21\u62df\u3002",
+      "human_conclusion": "\u5b83\u7684\u8def\u5b50\u66f4\u50cf\u6570\u5b57\u6c99\u76d8\uff0c\u4e0d\u50cf\u804a\u5929\u673a\u5668\u4eba\u3002",
+      "points": [
+        "\u642d\u56fe\u8c31",
+        "\u642d\u73af\u5883",
+        "\u8dd1\u63a8\u6f14"
+      ],
+      "media_label": "\u8282\u70b9\u5173\u7cfb\u56fe / \u5de5\u4f5c\u6d41\u7ed3\u6784",
+      "media_type": "generated_image",
+      "media_prompt": "multi-agent graph, relationship nodes, futuristic dashboard, blue black interface, 6:5 horizontal",
+      "needs_github_evidence": true,
+      "evidence_text": "\u5de5\u4f5c\u6d41\u4e0e\u7ed3\u6784\u56fe\u6765\u81ea\u5b98\u65b9 README",
+      "subtitle_secondary_text": "Build world, relations and memory before simulation."
+    },
+    {
+      "id": "p3",
+      "name": "P3",
+      "duration_sec": 65,
+      "layout": "dashboard",
+      "motion_preset": "stagger",
+      "visual_preset": "dashboard",
+      "title": "\u5b83\u80fd\u5e72\u561b\uff0c\u6848\u4f8b\u624d\u662f\u91cd\u70b9",
+      "subtitle": "\u5b98\u65b9\u516c\u5f00\u4fe1\u606f\u91cc\uff0c\u65e2\u6709\u8206\u60c5\u63a8\u6f14\uff0c\u4e5f\u6709\u300a\u7ea2\u697c\u68a6\u300b\u7ed3\u5c40\u63a8\u6f14\u3002",
+      "bottom_conclusion": "\u6848\u4f8b\u8d1f\u8d23\u7559\u4eba",
+      "voiceover_text": "\u8fd9\u4e2a\u9879\u76ee\u6700\u597d\u8bb2\u6e05\u695a\u7684\uff0c\u4e0d\u662f\u62bd\u8c61\u539f\u7406\uff0c\u800c\u662f\u6848\u4f8b\u3002\u5b98\u65b9\u5df2\u7ecf\u5c55\u793a\u4e86\u8206\u60c5\u63a8\u6f14\uff0c\u4e5f\u5c55\u793a\u4e86\u300a\u7ea2\u697c\u68a6\u300b\u5931\u4f20\u7ed3\u5c40\u8fd9\u79cd\u53d9\u4e8b\u4e16\u754c\u63a8\u6f14\u3002",
+      "human_conclusion": "\u5b83\u65e2\u60f3\u505a\u73b0\u5b9e\u9884\u6d4b\uff0c\u4e5f\u60f3\u505a\u6545\u4e8b\u63a8\u6f14\u3002",
+      "points": [
+        "\u8206\u60c5\u63a8\u6f14",
+        "\u7b56\u7565\u6c99\u76d8",
+        "\u53d9\u4e8b\u4e16\u754c\u6a21\u62df"
+      ],
+      "media_label": "\u591a\u5361\u7247\u6848\u4f8b\u677f",
+      "media_type": "generated_image",
+      "media_prompt": "case study dashboard, public opinion simulation, story world prediction cards, blue interface, 6:5 horizontal",
+      "needs_github_evidence": true,
+      "evidence_text": "\u5b98\u65b9 Demo \u4e0e README \u793a\u4f8b",
+      "subtitle_secondary_text": "Use cases matter more than abstract claims."
+    },
+    {
+      "id": "p4",
+      "name": "P4",
+      "duration_sec": 62,
+      "layout": "phone",
+      "motion_preset": "stagger",
+      "visual_preset": "phone",
+      "title": "\u95e8\u69db\u8981\u8bb2\u900f\uff0c\u4e0d\u7136\u4fe1\u4efb\u7acb\u4e0d\u4f4f",
+      "subtitle": "\u8fd9\u7c7b\u9879\u76ee\u5f88\u5bb9\u6613\u88ab\u5439\u8fc7\u5934\uff0c\u4f46\u771f\u6b63\u6709\u4ef7\u503c\u7684\u662f\u628a\u95e8\u69db\u8bb2\u660e\u767d\u3002",
+      "bottom_conclusion": "\u95e8\u69db\u662f\u4fe1\u4efb\u6765\u6e90",
+      "voiceover_text": "\u5b83\u9700\u8981 Node\u3001Python\u3001API Key \u751a\u81f3\u989d\u5916\u670d\u52a1\u652f\u6301\uff0c\u800c\u4e14\u5b98\u65b9\u4e5f\u63d0\u9192\u6a21\u62df\u6210\u672c\u4e0d\u4f4e\u3002\u6240\u4ee5\u8fd9\u7c7b\u9879\u76ee\u4e00\u5b9a\u8981\u8bb2\u6e05\u695a\uff0c\u4e0d\u662f\u6bcf\u4e2a\u4eba\u4eca\u5929\u90fd\u80fd\u65e0\u8111\u4e0a\u624b\u3002",
+      "human_conclusion": "\u5f88\u9177\uff0c\u4f46\u4e0d\u662f\u96f6\u95e8\u69db\u795e\u5668\u3002",
+      "points": [
+        "\u4f9d\u8d56\u8981\u6c42",
+        "\u9002\u5408\u8c01",
+        "\u522b\u5439\u592a\u6ee1"
+      ],
+      "media_label": "\u4fe1\u606f\u6e05\u5355 + \u95ee\u7b54\u5361\u7247",
+      "media_type": "generated_image",
+      "media_prompt": "requirements panel, info cards, warning notes, dark clean tech ui, 6:5 horizontal",
+      "needs_github_evidence": true,
+      "evidence_text": "\u73af\u5883\u4f9d\u8d56\u4e0e\u9650\u5236\u6765\u81ea\u5b98\u65b9\u6587\u6863",
+      "subtitle_secondary_text": "Cool, but not a zero-threshold tool."
+    },
+    {
+      "id": "p5",
+      "name": "P5",
+      "duration_sec": 54,
+      "layout": "dashboard",
+      "motion_preset": "calm",
+      "visual_preset": "dashboard",
+      "title": "\u503c\u4e0d\u503c\u5f97\u5173\u6ce8\uff0c\u5fc5\u987b\u7ed9\u5224\u65ad",
+      "subtitle": "\u4e0d\u8981\u53ea\u8bb2\u529f\u80fd\uff0c\u8981\u660e\u786e\u544a\u8bc9\u89c2\u4f17\u503c\u4e0d\u503c\u5f97\u770b\u3001\u9002\u4e0d\u9002\u5408\u73b0\u5728\u4e0a\u624b\u3002",
+      "bottom_conclusion": "\u660e\u786e\u5224\u65ad\uff0c\u51cf\u5c11\u72b9\u8c6b",
+      "voiceover_text": "\u6211\u7684\u7ed3\u8bba\u5f88\u7b80\u5355\uff1a\u8fd9\u4e2a\u9879\u76ee\u503c\u5f97\u5173\u6ce8\uff0c\u503c\u5f97\u6536\u85cf\uff0c\u503c\u5f97\u6301\u7eed\u8ddf\u8e2a\uff0c\u4f46\u4e0d\u503c\u5f97\u88ab\u5439\u6210\u4e07\u80fd\u9884\u6d4b\u5668\u3002",
+      "human_conclusion": "\u503c\u5f97\u5173\u6ce8\uff0c\u4f46\u522b\u795e\u5316\u3002",
+      "points": [
+        "\u503c\u5f97\u770b",
+        "\u9002\u5408\u957f\u671f\u5173\u6ce8",
+        "\u4e0d\u9002\u5408\u5439\u6210\u795e\u5668"
+      ],
+      "media_label": "\u5224\u65ad\u5361\u7247",
+      "media_type": "generated_image",
+      "media_prompt": "verdict card, editorial tech style, clean conclusion panel, blue black, 6:5 horizontal",
+      "needs_github_evidence": false,
+      "evidence_text": "\u7ed3\u8bba\u6765\u81ea\u5b98\u65b9\u8d44\u6599\u4e0e\u8c28\u614e\u5224\u65ad",
+      "subtitle_secondary_text": "Worth watching, not worth mythologizing."
+    },
+    {
+      "id": "p6",
+      "name": "\u7ed3\u8bedP6",
+      "duration_sec": 42,
+      "layout": "summary",
+      "motion_preset": "lift",
+      "visual_preset": "image",
+      "title": "\u8fd9\u9879\u76ee\u6700\u503c\u5f97\u770b\u7684\uff0c\u662f\u65b9\u5411",
+      "subtitle": "\u5b83\u66f4\u50cf\u4e00\u4e2a\u503c\u5f97\u957f\u671f\u89c2\u5bdf\u7684\u524d\u6cbf\u8def\u7ebf\uff0c\u800c\u4e0d\u662f\u9a6c\u4e0a\u4eba\u4eba\u53ef\u7528\u7684\u5de5\u5177\u3002",
+      "bottom_conclusion": "\u503c\u5f97\u5173\u6ce8\uff0c\u522b\u5439\u4e07\u80fd",
+      "voiceover_text": "\u5982\u679c\u4f60\u5173\u5fc3\u7684\u662f AI \u4f1a\u4e0d\u4f1a\u4ece\u56de\u7b54\u95ee\u9898\u8d70\u5411\u6a21\u62df\u590d\u6742\u4e16\u754c\uff0c\u90a3 MiroFish \u5f88\u503c\u5f97\u7ee7\u7eed\u8ffd\u3002",
+      "human_conclusion": "\u770b\u65b9\u5411\u4ef7\u503c\uff0c\u4e0d\u770b\u795e\u8bdd\u5305\u88c5\u3002",
+      "points": [
+        "\u503c\u5f97\u7ee7\u7eed\u8ffd",
+        "\u66f4\u50cf\u65b9\u5411\u9a8c\u8bc1",
+        "\u4e0d\u662f\u7acb\u523b\u4e0a\u624b\u578b\u5de5\u5177"
+      ],
+      "media_label": "\u6536\u675f\u603b\u7ed3\u5361",
+      "media_type": "generated_image",
+      "media_prompt": "summary card, clean futuristic editorial style, simulation lab mood, 6:5 horizontal",
+      "needs_github_evidence": false,
+      "evidence_text": "\u6700\u7ec8\u5224\u65ad\u4e0e\u8d26\u53f7\u5b9a\u4f4d\u6536\u675f",
+      "subtitle_secondary_text": "Watch the direction, not the hype."
+    }
+  ]
+}

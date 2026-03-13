@@ -1,0 +1,459 @@
+﻿{
+  "meta": {
+    "projectName": "Stick Animation Demo",
+    "accountName": "Oxecho",
+    "positioning": "简笔动画自动化演示",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "visualSkin": "tool",
+    "subtitleMode": "single"
+  },
+  "theme": {
+    "accentColor": "#42E8D4",
+    "secondaryColor": "#6CAEFF",
+    "pageLight": "#F4F8FB",
+    "pageDark": "#09131C"
+  },
+  "tags": {
+    "left": "简笔动画",
+    "right": "自动化生成"
+  },
+  "segments": [
+    {
+      "id": "stick-hook",
+      "label": "开场",
+      "navLabel": "开场",
+      "durationInFrames": 96,
+      "layout": "hero",
+      "motionPreset": "lift",
+      "visualPreset": "stick-narration",
+      "title": "同一句话，换个表达顺序，结果完全不同",
+      "subtitle": "很多沟通失败，不是内容错，而是出场顺序错了",
+      "bottomConclusion": "先接情绪，再讲事实",
+      "voiceoverText": "很多人一被质问，就急着解释事实。但真正有效的表达，第一步往往不是解释，而是先接住情绪。",
+      "humanConclusion": "顺序错了，解释越多越乱。",
+      "subtitleSecondaryText": "",
+      "points": [
+        "先接情绪",
+        "再说事实",
+        "最后给方案"
+      ],
+      "mediaLabel": "简笔讲述",
+      "mediaPrompt": "",
+      "stickScene": {
+        "template": "narration",
+        "backgroundStyle": "plain",
+        "topCaption": "不是你不会说，是你说的顺序不对",
+        "bottomCaption": "先接情绪，再讲事实，最后给方案",
+        "actors": [
+          {
+            "id": "narrator",
+            "name": "讲述者",
+            "role": "narrator",
+            "position": "center",
+            "emotion": "confident",
+            "pose": "talk",
+            "accessory": "none",
+            "color": "#F3FAFF",
+            "accentColor": "#42E8D4"
+          }
+        ],
+        "bubbles": [
+          {
+            "actorId": "narrator",
+            "text": "很多沟通失败，不是内容错。",
+            "tone": "think",
+            "startFrame": 18,
+            "durationInFrames": 34,
+            "emphasis": true
+          },
+          {
+            "actorId": "narrator",
+            "text": "而是表达顺序错了。",
+            "tone": "think",
+            "startFrame": 48,
+            "durationInFrames": 32,
+            "emphasis": false
+          }
+        ],
+        "beats": [
+          {
+            "id": "hook-caption",
+            "type": "caption",
+            "startFrame": 64,
+            "durationInFrames": 22,
+            "text": "顺序一错，后面全乱"
+          }
+        ],
+        "autoCamera": true
+      },
+      "evidenceText": "示例段落，无需外部证据",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "stick-dialogue",
+      "label": "对话示范",
+      "navLabel": "对话",
+      "durationInFrames": 126,
+      "layout": "concept",
+      "motionPreset": "stagger",
+      "visualPreset": "stick-dialogue",
+      "title": "先接情绪，对方才会听你后面的话",
+      "subtitle": "有效沟通不是争对错，而是先把情绪压下来",
+      "bottomConclusion": "先接情绪，再说进度",
+      "voiceoverText": "如果对方正在情绪里，你一上来只讲事实，他根本听不进去。你要先让对方感觉到，你听到了他的着急。",
+      "humanConclusion": "让对方先觉得你理解他。",
+      "subtitleSecondaryText": "",
+      "points": [
+        "先理解对方感受",
+        "再同步真实进度",
+        "最后给清晰承诺"
+      ],
+      "mediaLabel": "简笔对话",
+      "mediaPrompt": "",
+      "stickScene": {
+        "template": "dialogue",
+        "backgroundStyle": "room",
+        "relationship": "coworker",
+        "topCaption": "有情绪时，先别急着解释",
+        "bottomCaption": "理解感受 -> 说明情况 -> 给出承诺",
+        "actors": [
+          {
+            "id": "other",
+            "name": "同事",
+            "role": "other",
+            "position": "left",
+            "emotion": "anxious",
+            "pose": "talk",
+            "accessory": "glasses",
+            "color": "#F3FAFF",
+            "accentColor": "#42E8D4"
+          },
+          {
+            "id": "self",
+            "name": "自己",
+            "role": "self",
+            "position": "right",
+            "emotion": "confident",
+            "pose": "talk",
+            "accessory": "phone",
+            "color": "#EAF5FF",
+            "accentColor": "#6CAEFF"
+          }
+        ],
+        "bubbles": [
+          {
+            "actorId": "other",
+            "text": "你那边怎么还没给我结果？",
+            "tone": "say",
+            "startFrame": 14,
+            "durationInFrames": 32,
+            "emphasis": true
+          },
+          {
+            "actorId": "self",
+            "text": "我知道你现在很着急。",
+            "tone": "say",
+            "startFrame": 48,
+            "durationInFrames": 30,
+            "emphasis": false
+          },
+          {
+            "actorId": "self",
+            "text": "我今天 6 点前把完整版本给你。",
+            "tone": "say",
+            "startFrame": 82,
+            "durationInFrames": 34,
+            "emphasis": false
+          }
+        ],
+        "autoCamera": true
+      },
+      "evidenceText": "示例段落，无需外部证据",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "stick-conflict",
+      "label": "冲突示范",
+      "navLabel": "冲突",
+      "durationInFrames": 132,
+      "layout": "concept",
+      "motionPreset": "spotlight",
+      "visualPreset": "stick-conflict",
+      "title": "高压场景下，解释不是第一反应",
+      "subtitle": "越急着自证，越容易让冲突升级",
+      "bottomConclusion": "先稳住局面，再进入事实",
+      "voiceoverText": "高压场景里，你一紧张就会本能解释，但这往往会让对方觉得你在找借口。先稳住情绪，局面才有解。",
+      "humanConclusion": "先降压，再推进。",
+      "subtitleSecondaryText": "",
+      "points": [
+        "对方在气头上",
+        "你别先讲理由",
+        "先把气氛降下来"
+      ],
+      "mediaLabel": "简笔冲突",
+      "mediaPrompt": "",
+      "stickScene": {
+        "template": "conflict",
+        "backgroundStyle": "office",
+        "relationship": "boss-employee",
+        "topCaption": "高压沟通，先稳情绪，不要先自证",
+        "bottomCaption": "先稳住，再解释，再交付",
+        "actors": [
+          {
+            "id": "boss",
+            "name": "老板",
+            "role": "boss",
+            "position": "left",
+            "emotion": "angry",
+            "pose": "point",
+            "accessory": "tie",
+            "color": "#FFD8D8",
+            "accentColor": "#FF6B6B"
+          },
+          {
+            "id": "me",
+            "name": "自己",
+            "role": "self",
+            "position": "right",
+            "emotion": "awkward",
+            "pose": "shrug",
+            "accessory": "none",
+            "color": "#EAF5FF",
+            "accentColor": "#6CAEFF"
+          }
+        ],
+        "bubbles": [
+          {
+            "actorId": "boss",
+            "text": "这个方案为什么现在还没发？",
+            "tone": "shout",
+            "startFrame": 18,
+            "durationInFrames": 34,
+            "emphasis": true
+          },
+          {
+            "actorId": "me",
+            "text": "我知道你着急，我先给你现在的进度。",
+            "tone": "say",
+            "startFrame": 56,
+            "durationInFrames": 34,
+            "emphasis": false
+          },
+          {
+            "actorId": "me",
+            "text": "我今天下班前给你可交付版本。",
+            "tone": "say",
+            "startFrame": 94,
+            "durationInFrames": 30,
+            "emphasis": false
+          }
+        ],
+        "autoCamera": true
+      },
+      "evidenceText": "示例段落，无需外部证据",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "stick-compare",
+      "label": "对比示范",
+      "navLabel": "对比",
+      "durationInFrames": 120,
+      "layout": "dashboard",
+      "motionPreset": "stagger",
+      "visualPreset": "stick-compare",
+      "title": "普通表达 vs 高手表达",
+      "subtitle": "差别不在你说了多少，而在顺序和着力点",
+      "bottomConclusion": "高手先稳情绪，再给路径",
+      "voiceoverText": "普通表达只会堆事实，高效表达会先处理情绪，再给对方清晰的路径和预期。",
+      "humanConclusion": "会说的人，先处理情绪。",
+      "subtitleSecondaryText": "",
+      "points": [
+        "普通人：一上来就解释",
+        "高手：先安抚，再推进"
+      ],
+      "mediaLabel": "简笔对比",
+      "mediaPrompt": "",
+      "stickScene": {
+        "template": "compare",
+        "backgroundStyle": "classroom",
+        "topCaption": "不是说更多，而是说对顺序",
+        "bottomCaption": "普通表达 vs 高效表达",
+        "actors": [
+          {
+            "id": "left",
+            "name": "普通表达",
+            "role": "other",
+            "position": "left",
+            "emotion": "awkward",
+            "pose": "shrug",
+            "accessory": "none",
+            "color": "#FFD8D8",
+            "accentColor": "#FF7C7C"
+          },
+          {
+            "id": "right",
+            "name": "高手表达",
+            "role": "self",
+            "position": "right",
+            "emotion": "confident",
+            "pose": "point",
+            "accessory": "glasses",
+            "color": "#E3FFF5",
+            "accentColor": "#62DFC5"
+          }
+        ],
+        "bubbles": [
+          {
+            "actorId": "left",
+            "text": "我已经很努力了，只是需求变了。",
+            "tone": "say",
+            "startFrame": 20,
+            "durationInFrames": 40,
+            "emphasis": false
+          },
+          {
+            "actorId": "right",
+            "text": "我知道你急，我现在给你清晰时间表。",
+            "tone": "say",
+            "startFrame": 66,
+            "durationInFrames": 40,
+            "emphasis": true
+          }
+        ],
+        "autoCamera": true
+      },
+      "evidenceText": "示例段落，无需外部证据",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "stick-demo-5",
+      "label": "应用场景",
+      "navLabel": "应用",
+      "durationInFrames": 108,
+      "layout": "phone",
+      "motionPreset": "calm",
+      "visualPreset": "stick-dialogue",
+      "title": "这套模块适合批量做人物关系镜头",
+      "subtitle": "职场、情感、销售、认知类内容都能复用",
+      "bottomConclusion": "LLM 理解内容，模板稳定出片",
+      "voiceoverText": "只要内容里有人物关系、对话、冲突、反转，这套简笔动画模板就能稳定接上，不需要每次重新画。",
+      "humanConclusion": "复用比一次性炫技更值钱。",
+      "subtitleSecondaryText": "",
+      "points": [
+        "适合人物关系段落",
+        "适合批量内容生产",
+        "适合自动化出片"
+      ],
+      "mediaLabel": "简笔应用",
+      "mediaPrompt": "",
+      "stickScene": {
+        "template": "dialogue",
+        "backgroundStyle": "room",
+        "relationship": "friend",
+        "topCaption": "适合所有需要“演关系”的内容段",
+        "bottomCaption": "讲关系、讲情绪、讲反转，都比纯面板更有表现力",
+        "actors": [
+          {
+            "id": "creator",
+            "name": "创作者",
+            "role": "self",
+            "position": "left",
+            "emotion": "happy",
+            "pose": "talk",
+            "accessory": "phone",
+            "color": "#F3FAFF",
+            "accentColor": "#42E8D4"
+          },
+          {
+            "id": "viewer",
+            "name": "观众",
+            "role": "other",
+            "position": "right",
+            "emotion": "surprised",
+            "pose": "talk",
+            "accessory": "none",
+            "color": "#EAF5FF",
+            "accentColor": "#6CAEFF"
+          }
+        ],
+        "bubbles": [
+          {
+            "actorId": "viewer",
+            "text": "这段关系演示是自动生成的？",
+            "tone": "say",
+            "startFrame": 18,
+            "durationInFrames": 32,
+            "emphasis": false
+          },
+          {
+            "actorId": "creator",
+            "text": "对，文案进来，模板自动编排。",
+            "tone": "say",
+            "startFrame": 54,
+            "durationInFrames": 34,
+            "emphasis": true
+          }
+        ],
+        "autoCamera": true
+      },
+      "evidenceText": "示例段落，无需外部证据",
+      "needsGithubEvidence": false
+    },
+    {
+      "id": "stick-summary",
+      "label": "总结",
+      "navLabel": "总结",
+      "durationInFrames": 96,
+      "layout": "summary",
+      "motionPreset": "lift",
+      "visualPreset": "stick-narration",
+      "title": "文本 -> 简笔动画 -> 视频，这条链已经能跑通",
+      "subtitle": "接下来只需要继续补模板、调风格、扩题材",
+      "bottomConclusion": "先把稳定复用跑通，再追求更复杂动作",
+      "voiceoverText": "第一版最重要的不是动作多复杂，而是模板稳定、出片快、可批量生产。这样它才有真正的商业价值。",
+      "humanConclusion": "先稳定，后扩展。",
+      "subtitleSecondaryText": "",
+      "points": [
+        "先做稳定模板",
+        "再扩动作库",
+        "最后做批量生产"
+      ],
+      "mediaLabel": "简笔总结",
+      "mediaPrompt": "",
+      "stickScene": {
+        "template": "narration",
+        "backgroundStyle": "plain",
+        "topCaption": "第一版目标：稳定、可控、可批量",
+        "bottomCaption": "先稳定复用，再追复杂动作",
+        "actors": [
+          {
+            "id": "summary",
+            "name": "总结者",
+            "role": "narrator",
+            "position": "center",
+            "emotion": "confident",
+            "pose": "talk",
+            "accessory": "none",
+            "color": "#F3FAFF",
+            "accentColor": "#42E8D4"
+          }
+        ],
+        "bubbles": [
+          {
+            "actorId": "summary",
+            "text": "稳定复用，才是真正能收费的能力。",
+            "tone": "think",
+            "startFrame": 18,
+            "durationInFrames": 42,
+            "emphasis": true
+          }
+        ],
+        "autoCamera": true
+      },
+      "evidenceText": "示例段落，无需外部证据",
+      "needsGithubEvidence": false
+    }
+  ]
+}
