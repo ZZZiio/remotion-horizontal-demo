@@ -3,6 +3,11 @@
 Project path: `PROJECT_ROOT`  
 Chinese README: `README.md`
 
+Quick links:
+- Demo video: <paste your external link>
+- Quick start: see “Simplest workflow”
+- FAQ: see “FAQ (Short)”
+
 Note: Any absolute paths shown in this document are examples. Replace them with your local project root.
 
 This is an AI‑driven automated short‑video workflow demo. It turns “project link / project analysis” into `Remotion JSON` and renders `MP4`.
@@ -29,6 +34,15 @@ For learning and non‑commercial use only.
 - PowerShell (Windows scripts)
 - Python (voiceover alignment)
 - OpenAI API (optional)
+
+## Demo Video
+
+- <paste your external link>
+
+## Screenshots
+
+![Panel Screenshot](docs/screenshots/panel.png)
+![Editor Screenshot](docs/screenshots/editor.png)
 
 ## 1. Who is this for
 
@@ -328,7 +342,7 @@ npm run editor
 - `PROJECT_ROOT\out\videos`
 - `PROJECT_ROOT\out\panel-data`
 
-## 8. FAQ
+## 8. FAQ (Short)
 
 ### 8.1 Missing `OPENAI_API_KEY`
 

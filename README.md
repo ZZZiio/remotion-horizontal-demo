@@ -1,7 +1,17 @@
 ﻿# Remotion 项目视频工具使用说明
 
+![license](https://img.shields.io/badge/license-MIT-blue)
+![platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![remotion](https://img.shields.io/badge/Remotion-4.x-ff2d20)
+![repo](https://img.shields.io/badge/repo-ZZZiio%2Fremotion--horizontal--demo-0b4b8a)
+
 项目路径：`PROJECT_ROOT`  
 英文版：`README_EN.md`
+
+快速入口：
+- 演示视频：<填写你的视频外链>
+- 快速上手：见「最简单工作流」
+- 常见问题：见「FAQ（简版）」
 
 说明：文档中的绝对路径仅为示例，请替换为你本机的项目根目录。 
 这是一个 AI 驱动的自动化短视频生成工作流 Demo，可将“项目链接 / 项目分析”转为 `Remotion JSON` 并渲染 `MP4`。  
@@ -22,6 +32,17 @@
 
 
 这是一个用于把“项目链接 / 项目分析”转成 `Remotion JSON` 并最终渲染为 `MP4` 的本地工具仓库。
+
+## 演示视频
+
+- <填写你的视频外链>
+
+## 截图
+
+在仓库中放 2-3 张关键界面截图，然后替换下面占位：
+
+![Panel Screenshot](docs/screenshots/panel.png)
+![Editor Screenshot](docs/screenshots/editor.png)
 
 ## 1. 适合谁用
 
@@ -333,51 +354,30 @@ npm run editor
 - `PROJECT_ROOT\out\videos`
 - `PROJECT_ROOT\out\panel-data`
 
-## 8. 常见问题
+## 8. FAQ（简版）
 
 ### 8.1 提示缺少 `OPENAI_API_KEY`
+未配置 key 或当前进程读不到 `.env.local`，用面板重新保存一次。 
 
-说明未配置 key，或当前进程没读到本地 `.env.local`。
 
-处理方式：
 
-- 用面板重新保存一次 key
-- 检查 `.env.local` 是否存在
-- 检查 key 是否有效
 
 ### 8.2 OpenAI 返回 401
+key 无效/过期/权限不对或类型不匹配。 
 
-说明 key 本身无效、过期、权限不对，或不属于当前可用类型。
 
 ### 8.3 生成 JSON 失败
+常见原因：网络异常、响应非 JSON、提示词文件缺失。 
 
-常见原因：
 
-- 网络问题
-- OpenAI 响应异常
-- 模型输出不合法 JSON
-- 提示词总文件找不到
 
 ### 8.4 渲染 MP4 失败
+常见原因：未 `npm install`、`@remotion/cli` 不可用、输出目录不可写、素材 URL 失效。 
 
-常见原因：
 
-- `npm install` 未完成
-- `@remotion/cli` 不可用
-- 输出目录不可写
-- 素材 URL 失效
-- 本机环境缺少依赖
 
-### 8.5 面板里任务失败了怎么办
 
-按优先顺序处理：
 
-1. 看底部日志
-2. 在历史中筛选 `仅看失败项`
-3. 点 `失败详情`
-4. 如果是队列任务，可点：
-   - `回填失败项`
-   - `只重跑失败项`
 
 ## 9. 推荐验证命令
 
