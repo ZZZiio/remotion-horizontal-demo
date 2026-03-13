@@ -1,6 +1,6 @@
 # Remotion 项目视频工具 Demo
 
-![license](https://img.shields.io/badge/license-MIT-blue)
+![license](https://img.shields.io/badge/license-Non--Commercial-red)
 ![platform](https://img.shields.io/badge/platform-Windows-0078D6)
 ![remotion](https://img.shields.io/badge/Remotion-4.x-ff2d20)
 
@@ -8,7 +8,8 @@
 
 这是一个 AI 驱动的自动化短视频工作流 Demo：把“项目链接 / 项目分析”转为 `Remotion JSON` 并渲染 `MP4`。  
 功能包含：模板与主题色自动匹配、火柴人动画/图片/视频可视化区域生成、口播音频对齐字幕与动画、自动镜头与动画编排。  
-本项目为原型演示，可能存在 bug，不提供维护与答疑。 
+本项目为原型演示，可能存在 bug，不提供维护与答疑。  
+仅限学习与非商业用途使用，商用需获得作者许可。 
 
 ## 快速开始
 
@@ -58,4 +59,4 @@ npm run video:account
 
 ## 许可
 
-MIT License
+非商业许可（Non-Commercial License）
